@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 59.5%;
+}
+
+.hide {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  
+  display: grid;
+}
+
+body {
+  padding-top: 5.0rem;
+}
+
+#container{
+  /* border: 2px solid red; */
+  justify-self: center;
+  align-self: center;
+  margin-top: -17rem;
+
+  display: grid;
+  gap: 10.2rem;
+}
+
+@media (min-width: 900px) {
+  #container {
+    display: flex;
+    gap: 16.2rem;
+  }
+}
+
+/* timer and controls config  */
+
+.timer {
+  align-self: center;
+
+  display: grid;
+  height: 21.3rem;
+}
+
+.hours {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12.6166rem;
+  display: flex;
+  align-self: flex-end;
+  justify-self: center;
+}
+
+.controls {
+  display: flex;
+  gap: 4.0rem;
+  justify-self: center;
+}
+
+.controls button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* sounds config */
+
+.sounds {
+  height: 33.6rem;
+
+  display: grid;
+  grid-template-columns: 13.8rem 13.8rem;
+  gap: 3.2rem;
+}
+
+.sounds button {
+  border-radius: 2.4rem;
+  background: #E1E1E6;
+  transition: .2s;
+  cursor: pointer;
+  border: none;
+}
+
+.sounds button:hover{
+  background: #02799D;
+}
+
+.sounds button:hover path{
+  background: #02799D;
+  fill: white;
+}
