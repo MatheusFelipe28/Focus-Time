@@ -17,8 +17,9 @@ buttonPlay.addEventListener('click', function() {
 })
 
 buttonPause.addEventListener('click', function() {
-    buttonPlay.classList.remove('hide')
     buttonPause.classList.add('hide')
+    buttonPlay.classList.remove('hide')
+    clearTimeout(timeTimerOut)
 })
 
 buttonIncrease.addEventListener('click', function() {
@@ -47,8 +48,8 @@ function resetTimer () {
 }
 
 buttonStop.addEventListener('click', function() {
-    resetTimer()
     clearTimeout(timeTimerOut)
+    resetTimer()
 })
 
 function countDown() {
@@ -78,3 +79,31 @@ const rainSoundsButton = document.querySelector('.rainSoundsButton')
 const forestSoundsButton = document.querySelector('.forestSoundsButton')
 const coffeShopSoundsButton = document.querySelector('.coffeShopSoundsButton')
 const fireplaceSoundsButton = document.querySelector('.fireplaceSoundsButton')
+
+rainSoundsButton.addEventListener('click', function() {
+    rainSounds.play()
+    fireplaceSounds.pause()
+    forestSounds.pause()
+    coffeShopSounds.pause()
+})
+
+fireplaceSoundsButton.addEventListener('click', function() {
+    fireplaceSounds.play()
+    rainSounds.pause()
+    forestSounds.pause()
+    coffeShopSounds.pause()
+})
+
+forestSoundsButton.addEventListener('click', function() {
+    forestSounds.play()
+    fireplaceSounds.pause()
+    rainSounds.pause()
+    coffeShopSounds.pause()
+})
+
+coffeShopSoundsButton.addEventListener('click', function() {
+    coffeShopSounds.play()
+    forestSounds.pause()
+    fireplaceSounds.pause()
+    rainSounds.pause()
+})
