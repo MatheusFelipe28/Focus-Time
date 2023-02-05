@@ -65,6 +65,13 @@ function countDown() {
 
         minutesDisplay.textContent = String(minutes)
         secondsDisplay.textContent = String(seconds)
+      
+
+        if ( minutesDisplay.textContent && secondsDisplay.textContent <= 0 ) {
+            minutesDisplay.textContent = 0
+            secondsDisplay.textContent = 0
+            return
+        }
         countDown()
 
     }, 1000)
