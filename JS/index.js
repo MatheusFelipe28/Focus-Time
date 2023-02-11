@@ -82,10 +82,10 @@ const forestSoundsButton = document.querySelector('.forestSoundsButton')
 const coffeShopSoundsButton = document.querySelector('.coffeShopSoundsButton')
 const fireplaceSoundsButton = document.querySelector('.fireplaceSoundsButton')
 
-const rainSounds = new Audio("https://github.com/AlexJjunio/my-projects/raw/main/pomodoro-2.0/sounds/rain.wav?raw=true")
-const forestSounds = new Audio("https://github.com/AlexJjunio/my-projects/raw/main/pomodoro-2.0/sounds/florest.wav?raw=true")
-const coffeShopSounds = new Audio("https://github.com/AlexJjunio/my-projects/raw/main/pomodoro-2.0/sounds/coffeshop.wav?raw=true")
-const fireplaceSounds = new Audio("https://github.com/AlexJjunio/my-projects/raw/main/pomodoro-2.0/sounds/fireplace.wav?raw=true")
+const coffeShopSounds = new Audio("https://github.com/MatheusFelipe28/Focus-Time/blob/main/Sounds/coffeshop.wav?raw=true")
+const rainSounds = new Audio("https://github.com/MatheusFelipe28/Focus-Time/blob/main/Sounds/rain.wav?raw=true")
+const forestSounds = new Audio("https://github.com/MatheusFelipe28/Focus-Time/blob/main/Sounds/florest.wav?raw=true")
+const fireplaceSounds = new Audio("https://github.com/MatheusFelipe28/Focus-Time/blob/main/Sounds/fireplace.wav?raw=true")
 
 let isPlaying = false;
 var buttons = [rainSoundsButton, forestSoundsButton, coffeShopSoundsButton, fireplaceSoundsButton];
